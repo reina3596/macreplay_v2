@@ -1,0 +1,87 @@
+<?xml version="1.0" ?>
+<tv>
+  <channel id="1362">
+    <display-name>S*Y SP*RT F1 FHD</display-name>
+    <icon src="https://www.tvlogolar.xyz/europa/germany/sky/skysportf1.png"/>
+  </channel>
+  <programme start="20251102150500 +0000" stop="20251102153000 +0000" channel="1362">
+    <title>Formel 1</title>
+    <desc>Nico Hülkenberg holt das erste Podium seiner F1-Karriere und Lando Norris gewinnt sein Heimrennen. Regen und Chaos wirbeln den Großen Preis von Silverstone 2025 durcheinander.</desc>
+  </programme>
+  <programme start="20251102153000 +0000" stop="20251102173500 +0000" channel="1362">
+    <title>Formel 1: Großer Preis von Brasilien</title>
+    <desc>Der dritte WM-Titel: Bei Michael Schumachers letztem F1-Rennen sichert sich Sebastian Vettel zum dritten Mal die Weltmeisterschaft. In Brasilien reicht ihm der sechste Platz zum großen Erfolg.</desc>
+  </programme>
+  <programme start="20251102173500 +0000" stop="20251102180000 +0000" channel="1362">
+    <title>Formel 1</title>
+    <desc>Zwei Mercedes in der ersten Startreihe, Regen am Horizont und fünf Autos auf der Jagd nach dem Sieg. Silverstone 2024 war ein echter Klassiker. Am Ende triumphiert Lewis Hamilton auf heimischem Boden.</desc>
+  </programme>
+  <programme start="20251102180000 +0000" stop="20251102190000 +0000" channel="1362">
+    <title>Formel 1</title>
+    <desc>Sehr starker Auftakt: Lando Norris holte sich in Australien den Sieg zum F1-Start. Legt der Brite in Shanghai direkt nach?</desc>
+  </programme>
+  <programme start="20251102190000 +0000" stop="20251102200000 +0000" channel="1362">
+    <title>Formel 1</title>
+    <desc>Kaum aufzuhalten: In Dschidda holte sich Oscar Piastri die WM-Führung. Lässt der Australier auch in Miami die Muskeln spielen?</desc>
+  </programme>
+  <programme start="20251102200000 +0000" stop="20251102210000 +0000" channel="1362">
+    <title>Formel 1</title>
+    <desc>Willkommen zur Königsklasse im Motorrennsport. Die Formel 1 ist wird von der Fédération Internationale de l'Automobile (FIA) veranstaltet. Jede Saison besteht aus Einzelrennen, die als Grand Prix oder Großer Preis bezeichnet werden. Die Rennwochenenden beginnen am Freitag mit zwei freien Trainingseinheiten, Ausnahme ist der GP von Monaco, bei dem die Trainingseinheiten am Donnerstag stattfinden.</desc>
+  </programme>
+  <programme start="20251102210000 +0000" stop="20251102220000 +0000" channel="1362">
+    <title>Formel 1</title>
+    <desc>Spannung in Austin: Der Kampf um den Weltmeistertitel spitzt sich zu. Piastri, Norris oder doch Verstappen? Wer siegt beim GP der USA?</desc>
+  </programme>
+  <programme start="20251102220000 +0000" stop="20251102223000 +0000" channel="1362">
+    <title>F1 Academy</title>
+    <desc>Frauenpower auf dem Weg in die Formel 1: Sky zeigt die F1 Academy. Welche Fahrerin setzt sich in der dritten Saison der Rennserie durch? Der Rückblick auf das letzte Rennen.</desc>
+  </programme>
+  <programme start="20251102223000 +0000" stop="20251102230000 +0000" channel="1362">
+    <title>F1 Academy</title>
+    <desc>Frauenpower auf dem Weg in die Formel 1: Sky zeigt die F1 Academy. Welche Fahrerin setzt sich in der dritten Saison der Rennserie durch? Die Highlights des letzten Rennens.</desc>
+  </programme>
+  <programme start="20251102230000 +0000" stop="20251102233000 +0000" channel="1362">
+    <title>F1 Academy</title>
+    <desc>UHD bei Sky: Sky Kunden mit geeigneten Empfangsgeräten erleben in Deutschland und Österreich ausgewählte Sportevents live in Ultra HD. Auf den beiden exklusiven Sendern Sky Sport Bundesliga UHD und Sky Sport UHD zeigt Sky Sportevents in gestochen scharfer Bildqualität - mit vierfach höherer Auflösung als in HD. Weitere Infos: www.sky.de.</desc>
+  </programme>
+  <programme start="20251102150500 +0000" stop="20251102153000 +0000" channel="1362">
+    <title>Formel 1</title>
+    <desc>Nico Hülkenberg holt das erste Podium seiner F1-Karriere und Lando Norris gewinnt sein Heimrennen. Regen und Chaos wirbeln den Großen Preis von Silverstone 2025 durcheinander.</desc>
+  </programme>
+  <programme start="20251102153000 +0000" stop="20251102173500 +0000" channel="1362">
+    <title>Formel 1: Großer Preis von Brasilien</title>
+    <desc>Der dritte WM-Titel: Bei Michael Schumachers letztem F1-Rennen sichert sich Sebastian Vettel zum dritten Mal die Weltmeisterschaft. In Brasilien reicht ihm der sechste Platz zum großen Erfolg.</desc>
+  </programme>
+  <programme start="20251102173500 +0000" stop="20251102180000 +0000" channel="1362">
+    <title>Formel 1</title>
+    <desc>Zwei Mercedes in der ersten Startreihe, Regen am Horizont und fünf Autos auf der Jagd nach dem Sieg. Silverstone 2024 war ein echter Klassiker. Am Ende triumphiert Lewis Hamilton auf heimischem Boden.</desc>
+  </programme>
+  <programme start="20251102180000 +0000" stop="20251102190000 +0000" channel="1362">
+    <title>Formel 1</title>
+    <desc>Sehr starker Auftakt: Lando Norris holte sich in Australien den Sieg zum F1-Start. Legt der Brite in Shanghai direkt nach?</desc>
+  </programme>
+  <programme start="20251102190000 +0000" stop="20251102200000 +0000" channel="1362">
+    <title>Formel 1</title>
+    <desc>Kaum aufzuhalten: In Dschidda holte sich Oscar Piastri die WM-Führung. Lässt der Australier auch in Miami die Muskeln spielen?</desc>
+  </programme>
+  <programme start="20251102200000 +0000" stop="20251102210000 +0000" channel="1362">
+    <title>Formel 1</title>
+    <desc>Willkommen zur Königsklasse im Motorrennsport. Die Formel 1 ist wird von der Fédération Internationale de l'Automobile (FIA) veranstaltet. Jede Saison besteht aus Einzelrennen, die als Grand Prix oder Großer Preis bezeichnet werden. Die Rennwochenenden beginnen am Freitag mit zwei freien Trainingseinheiten, Ausnahme ist der GP von Monaco, bei dem die Trainingseinheiten am Donnerstag stattfinden.</desc>
+  </programme>
+  <programme start="20251102210000 +0000" stop="20251102220000 +0000" channel="1362">
+    <title>Formel 1</title>
+    <desc>Spannung in Austin: Der Kampf um den Weltmeistertitel spitzt sich zu. Piastri, Norris oder doch Verstappen? Wer siegt beim GP der USA?</desc>
+  </programme>
+  <programme start="20251102220000 +0000" stop="20251102223000 +0000" channel="1362">
+    <title>F1 Academy</title>
+    <desc>Frauenpower auf dem Weg in die Formel 1: Sky zeigt die F1 Academy. Welche Fahrerin setzt sich in der dritten Saison der Rennserie durch? Der Rückblick auf das letzte Rennen.</desc>
+  </programme>
+  <programme start="20251102223000 +0000" stop="20251102230000 +0000" channel="1362">
+    <title>F1 Academy</title>
+    <desc>Frauenpower auf dem Weg in die Formel 1: Sky zeigt die F1 Academy. Welche Fahrerin setzt sich in der dritten Saison der Rennserie durch? Die Highlights des letzten Rennens.</desc>
+  </programme>
+  <programme start="20251102230000 +0000" stop="20251102233000 +0000" channel="1362">
+    <title>F1 Academy</title>
+    <desc>UHD bei Sky: Sky Kunden mit geeigneten Empfangsgeräten erleben in Deutschland und Österreich ausgewählte Sportevents live in Ultra HD. Auf den beiden exklusiven Sendern Sky Sport Bundesliga UHD und Sky Sport UHD zeigt Sky Sportevents in gestochen scharfer Bildqualität - mit vierfach höherer Auflösung als in HD. Weitere Infos: www.sky.de.</desc>
+  </programme>
+</tv>

@@ -1,0 +1,48 @@
+{
+    "portals": {
+        "01ab2cca91a54f7e9987674b642d1983": {
+            "enabled": "true",
+            "name": "fu",
+            "url": "http://focusmag.eu01.live:8080/portal.php",
+            "macs": {
+                "00:1A:79:BA:BB:96": "August 6, 2026, 1:00 pm",
+                "00:1A:79:19:28:62": "August 8, 2026, 7:58 pm",
+                "00:1A:79:10:E3:6C": "August 6, 2026, 3:05 pm",
+                "00:1A:79:19:28:5F": "August 8, 2026, 7:57 pm"
+            },
+            "streams per mac": "1",
+            "epg offset": "0",
+            "proxy": "",
+            "enabled channels": [
+                "657105"
+            ],
+            "custom channel names": {},
+            "custom channel numbers": {},
+            "custom genres": {},
+            "custom epg ids": {},
+            "fallback channels": {
+                "657105": "DE F1 | SKY SPORTS F1 FHD",
+                "657104": "DE F1 | SKY SPORTS F1 HD"
+            }
+        }
+    },
+    "settings": {
+        "stream method": "ffmpeg",
+        "ffmpeg command": "-re -http_proxy <proxy> -timeout <timeout> -i <url> -map 0 -codec copy -f mpegts -flush_packets 0 -fflags +nobuffer -flags low_delay -strict experimental -analyzeduration 0 -probesize 32 -copyts -threads 12 pipe:",
+        "ffmpeg timeout": "5",
+        "test streams": "true",
+        "try all macs": "true",
+        "use channel genres": "true",
+        "use channel numbers": "true",
+        "sort playlist by channel genre": "false",
+        "sort playlist by channel number": "true",
+        "sort playlist by channel name": "false",
+        "enable security": "false",
+        "username": "admin",
+        "password": "12345",
+        "enable hdhr": "true",
+        "hdhr name": "MacReplay",
+        "hdhr id": "52c5e0f3a1844256a9f1815fd110fd88",
+        "hdhr tuners": "10"
+    }
+}

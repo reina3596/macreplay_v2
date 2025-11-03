@@ -1,0 +1,55 @@
+services:
+  macreplay:
+    image: macreplay:unraid
+    container_name: macreplay
+    hostname: macreplay
+    restart: unless-stopped
+    
+    # Network configuration for Unraid
+    network_mode: bridge
+    
+    # Port mappings
+    ports:
+      - "8001:8001"
+    
+    # Environment variables
+    environment:
+      - PUID=99          # Unraid nobody user ID
+      - PGID=100         # Unraid users group ID
+      - TZ=Europe/Berlin # Adjust timezone as needed
+      - PYTHONUNBUFFERED=1
+    
+    # Volume mappings for Unraid
+    volumes:
+      # Configuration and data persistence
+      - /mnt/user/appdata/macreplay/data:/app/data
+      - /mnt/user/appdata/macreplay/logs:/app/logs
+    
+    # Security options
+    security_opt:
+      - no-new-privileges:true
+    
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    
+    # Additional labels for Unraid management
+    labels:
+      - "net.unraid.docker.managed=dockerman"
+      - "net.unraid.docker.webui=http://[IP]:[PORT:8001]"
+
+# Networks
+networks:
+  default:
+    driver: bridge

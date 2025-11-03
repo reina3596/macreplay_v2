@@ -1,0 +1,269 @@
+2025-11-02 10:14:10,497 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 10:14:10,598 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 10:14:10,598 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 10:14:10,602 [WARNING] No existing config found. Creating a new one
+2025-11-02 10:14:10,604 [INFO] Refreshing Lineup...
+2025-11-02 10:14:10,604 [INFO] Refreshing XMLTV...
+2025-11-02 10:14:10,604 [INFO] Lineup Refreshed.
+2025-11-02 10:14:10,618 [INFO] XMLTV cache updated.
+2025-11-02 10:18:19,436 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 10:18:19,539 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 10:18:19,539 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 10:18:19,546 [INFO] Refreshing Lineup...
+2025-11-02 10:18:19,546 [INFO] Refreshing XMLTV...
+2025-11-02 10:18:19,546 [INFO] Lineup Refreshed.
+2025-11-02 10:18:19,550 [INFO] Loaded existing programme data from cache.
+2025-11-02 10:18:19,561 [INFO] XMLTV cache updated.
+2025-11-02 10:19:09,676 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 10:19:09,775 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 10:19:09,776 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 10:19:09,783 [INFO] Refreshing Lineup...
+2025-11-02 10:19:09,783 [INFO] Refreshing XMLTV...
+2025-11-02 10:19:09,783 [INFO] Lineup Refreshed.
+2025-11-02 10:19:09,787 [INFO] Loaded existing programme data from cache.
+2025-11-02 10:19:09,798 [INFO] XMLTV cache updated.
+2025-11-02 10:19:42,157 [INFO] Successfully tested MAC(00:1A:79:B6:70:1B) for Portal(fuco)
+2025-11-02 10:19:42,159 [INFO] Portal(fuco) added!
+2025-11-02 10:24:47,241 [INFO] getting Data from ae4dd957655b4c37a4236b173037ad6d
+2025-11-02 10:24:47,241 [INFO] Using mac: 00:1A:79:B6:70:1B
+2025-11-02 10:26:28,616 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 10:26:28,783 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 10:26:28,783 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 10:26:28,790 [INFO] Refreshing Lineup...
+2025-11-02 10:26:28,790 [INFO] Refreshing XMLTV...
+2025-11-02 10:26:28,790 [INFO] Lineup Refreshed.
+2025-11-02 10:26:28,794 [INFO] Loaded existing programme data from cache.
+2025-11-02 10:26:28,795 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 10:26:28,806 [INFO] XMLTV cache updated.
+2025-11-02 10:27:25,827 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 10:27:25,926 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 10:27:25,926 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 10:27:25,933 [INFO] Refreshing Lineup...
+2025-11-02 10:27:25,933 [INFO] Refreshing XMLTV...
+2025-11-02 10:27:25,933 [INFO] Lineup Refreshed.
+2025-11-02 10:27:25,937 [INFO] Loaded existing programme data from cache.
+2025-11-02 10:27:25,937 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 10:27:25,946 [INFO] XMLTV cache updated.
+2025-11-02 10:27:49,793 [INFO] Successfully tested MAC(00:1A:79:4D:02:7D) for Portal(fuco2)
+2025-11-02 10:27:49,795 [INFO] Portal(fuco2) added!
+2025-11-02 10:28:26,338 [INFO] getting Data from ae4dd957655b4c37a4236b173037ad6d
+2025-11-02 10:28:26,339 [INFO] Using mac: 00:1A:79:B6:70:1B
+2025-11-02 10:28:28,279 [INFO] getting Data from 6f2ca7c45ccd4d30bcfbc2da20fefdc3
+2025-11-02 10:28:28,280 [INFO] Using mac: 00:1A:79:4D:02:7D
+2025-11-02 10:29:51,223 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 10:29:51,319 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 10:29:51,319 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 10:29:51,326 [INFO] Refreshing Lineup...
+2025-11-02 10:29:51,326 [INFO] Refreshing XMLTV...
+2025-11-02 10:29:51,327 [INFO] Lineup Refreshed.
+2025-11-02 10:29:51,331 [INFO] Loaded existing programme data from cache.
+2025-11-02 10:29:51,331 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 10:29:51,332 [INFO] Fetching EPG | Portal: fuco2 | offset: 0 |
+2025-11-02 10:29:51,341 [INFO] XMLTV cache updated.
+2025-11-02 15:05:48,222 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 15:05:48,421 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 15:05:48,425 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 15:05:48,438 [INFO] Refreshing Lineup...
+2025-11-02 15:05:48,439 [INFO] Refreshing XMLTV...
+2025-11-02 15:05:48,439 [INFO] Lineup Refreshed.
+2025-11-02 15:05:48,444 [INFO] Loaded existing programme data from cache.
+2025-11-02 15:05:48,445 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 15:05:48,445 [INFO] Fetching EPG | Portal: fuco2 | offset: 0 |
+2025-11-02 15:05:48,455 [INFO] XMLTV cache updated.
+2025-11-02 15:11:06,972 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 15:11:07,062 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 15:11:07,063 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 15:11:07,070 [INFO] Refreshing Lineup...
+2025-11-02 15:11:07,070 [INFO] Refreshing XMLTV...
+2025-11-02 15:11:07,070 [INFO] Lineup Refreshed.
+2025-11-02 15:11:07,074 [INFO] Loaded existing programme data from cache.
+2025-11-02 15:11:07,075 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 15:11:07,075 [INFO] Fetching EPG | Portal: fuco2 | offset: 0 |
+2025-11-02 15:11:07,085 [INFO] XMLTV cache updated.
+2025-11-02 15:12:41,949 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 15:12:42,046 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 15:12:42,047 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 15:12:42,053 [INFO] Refreshing Lineup...
+2025-11-02 15:12:42,053 [INFO] Refreshing XMLTV...
+2025-11-02 15:12:42,053 [INFO] Lineup Refreshed.
+2025-11-02 15:12:42,056 [INFO] Loaded existing programme data from cache.
+2025-11-02 15:12:42,058 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 15:12:42,058 [INFO] Fetching EPG | Portal: fuco2 | offset: 0 |
+2025-11-02 15:12:42,067 [INFO] XMLTV cache updated.
+2025-11-02 15:13:14,350 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 15:13:14,448 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 15:13:14,448 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 15:13:14,455 [INFO] Refreshing Lineup...
+2025-11-02 15:13:14,455 [INFO] Refreshing XMLTV...
+2025-11-02 15:13:14,455 [INFO] Lineup Refreshed.
+2025-11-02 15:13:14,459 [INFO] Loaded existing programme data from cache.
+2025-11-02 15:13:14,459 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 15:13:14,460 [INFO] Fetching EPG | Portal: fuco2 | offset: 0 |
+2025-11-02 15:13:14,470 [INFO] XMLTV cache updated.
+2025-11-02 15:16:35,132 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 15:16:35,330 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 15:16:35,330 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 15:16:35,337 [INFO] Refreshing Lineup...
+2025-11-02 15:16:35,338 [INFO] Lineup Refreshed.
+2025-11-02 15:16:35,338 [INFO] Refreshing XMLTV...
+2025-11-02 15:16:35,341 [INFO] Loaded existing programme data from cache.
+2025-11-02 15:16:35,342 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 15:16:35,342 [INFO] Fetching EPG | Portal: fuco2 | offset: 0 |
+2025-11-02 15:16:35,352 [INFO] XMLTV cache updated.
+2025-11-02 15:17:51,353 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 15:17:51,457 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 15:17:51,457 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 15:17:51,464 [INFO] Refreshing Lineup...
+2025-11-02 15:17:51,464 [INFO] Refreshing XMLTV...
+2025-11-02 15:17:51,465 [INFO] Lineup Refreshed.
+2025-11-02 15:17:51,469 [INFO] Loaded existing programme data from cache.
+2025-11-02 15:17:51,469 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 15:17:51,470 [INFO] Fetching EPG | Portal: fuco2 | offset: 0 |
+2025-11-02 15:17:51,480 [INFO] XMLTV cache updated.
+2025-11-02 15:17:53,901 [INFO] getting Data from ae4dd957655b4c37a4236b173037ad6d
+2025-11-02 15:17:53,902 [INFO] Using mac: 00:1A:79:B6:70:1B
+2025-11-02 15:17:56,354 [INFO] getting Data from 6f2ca7c45ccd4d30bcfbc2da20fefdc3
+2025-11-02 15:17:56,354 [INFO] Using mac: 00:1A:79:4D:02:7D
+2025-11-02 15:18:25,046 [INFO] getting Data from ae4dd957655b4c37a4236b173037ad6d
+2025-11-02 15:18:25,046 [INFO] Using mac: 00:1A:79:B6:70:1B
+2025-11-02 15:18:27,486 [INFO] getting Data from 6f2ca7c45ccd4d30bcfbc2da20fefdc3
+2025-11-02 15:18:27,487 [INFO] Using mac: 00:1A:79:4D:02:7D
+2025-11-02 15:20:41,463 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 15:20:41,579 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 15:20:41,579 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 15:20:41,586 [INFO] Refreshing Lineup...
+2025-11-02 15:20:41,587 [INFO] Refreshing XMLTV...
+2025-11-02 15:20:41,587 [INFO] Lineup Refreshed.
+2025-11-02 15:20:41,591 [INFO] Loaded existing programme data from cache.
+2025-11-02 15:20:41,591 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 15:20:41,591 [INFO] Fetching EPG | Portal: fuco2 | offset: 0 |
+2025-11-02 15:20:41,600 [INFO] XMLTV cache updated.
+2025-11-02 15:21:21,285 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 15:21:21,380 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 15:21:21,380 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 15:21:21,387 [INFO] Refreshing Lineup...
+2025-11-02 15:21:21,387 [INFO] Lineup Refreshed.
+2025-11-02 15:21:21,387 [INFO] Refreshing XMLTV...
+2025-11-02 15:21:21,391 [INFO] Loaded existing programme data from cache.
+2025-11-02 15:21:21,391 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 15:21:21,392 [INFO] Fetching EPG | Portal: fuco2 | offset: 0 |
+2025-11-02 15:21:21,401 [INFO] XMLTV cache updated.
+2025-11-02 15:21:40,003 [INFO] getting Data from ae4dd957655b4c37a4236b173037ad6d
+2025-11-02 15:21:40,003 [INFO] Using mac: 00:1A:79:B6:70:1B
+2025-11-02 15:21:42,326 [INFO] getting Data from 6f2ca7c45ccd4d30bcfbc2da20fefdc3
+2025-11-02 15:21:42,326 [INFO] Using mac: 00:1A:79:4D:02:7D
+2025-11-02 15:22:31,537 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 15:22:31,633 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 15:22:31,633 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 15:22:31,640 [INFO] Refreshing Lineup...
+2025-11-02 15:22:31,641 [INFO] Refreshing XMLTV...
+2025-11-02 15:22:31,641 [INFO] Lineup Refreshed.
+2025-11-02 15:22:31,644 [INFO] Loaded existing programme data from cache.
+2025-11-02 15:22:31,644 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 15:22:31,645 [INFO] Fetching EPG | Portal: fuco2 | offset: 0 |
+2025-11-02 15:22:31,654 [INFO] XMLTV cache updated.
+2025-11-02 15:24:00,350 [INFO] FFmpeg and FFprobe found and working
+2025-11-02 15:24:00,448 [INFO] Server started on http://0.0.0.0:8001
+2025-11-02 15:24:00,448 [INFO] Using config file: /app/data/MacReplay.json
+2025-11-02 15:24:00,455 [INFO] Refreshing Lineup...
+2025-11-02 15:24:00,455 [INFO] Lineup Refreshed.
+2025-11-02 15:24:00,455 [INFO] Refreshing XMLTV...
+2025-11-02 15:24:00,460 [INFO] Loaded existing programme data from cache.
+2025-11-02 15:24:00,461 [INFO] Fetching EPG | Portal: fuco | offset: 0 |
+2025-11-02 15:24:00,461 [INFO] Fetching EPG | Portal: fuco2 | offset: 0 |
+2025-11-02 15:24:00,469 [INFO] XMLTV cache updated.
+2025-11-02 15:24:15,080 [INFO] Portal (fuco2) removed!
+2025-11-02 15:24:19,620 [INFO] getting Data from ae4dd957655b4c37a4236b173037ad6d
+2025-11-02 15:24:19,621 [INFO] Using mac: 00:1A:79:B6:70:1B
+2025-11-02 15:25:22,268 [ERROR] Error testing MAC( 00:1A:79:10:E3:FB) for Portal(fuco)
+2025-11-02 15:25:22,528 [ERROR] Error testing MAC( 00:1A:79:4D:02:00) for Portal(fuco)
+2025-11-02 15:25:22,663 [ERROR] Error testing MAC( 00:1A:79:4D:02:4F) for Portal(fuco)
+2025-11-02 15:25:22,811 [ERROR] Error testing MAC( 00:1A:79:10:E3:AC) for Portal(fuco)
+2025-11-02 15:25:22,812 [INFO] Portal(fuco) updated!
+2025-11-02 15:25:54,386 [ERROR] Error testing MAC( 00:1A:79:7C:6C:4F) for Portal(fuco)
+2025-11-02 15:25:54,389 [INFO] Portal(fuco) updated!
+2025-11-02 15:26:20,971 [INFO] Successfully tested MAC(00:1A:79:7C:6C:4F) for Portal(fuco 2)
+2025-11-02 15:26:20,973 [INFO] Portal(fuco 2) added!
+2025-11-02 15:26:42,331 [INFO] Portal (fuco 2) removed!
+2025-11-02 15:26:55,615 [ERROR] Error testing MAC( 00:1A:79:7C:6C:4F) for Portal(fuco)
+2025-11-02 15:26:55,705 [ERROR] Error testing MAC( 00:1A:79:19:28:62) for Portal(fuco)
+2025-11-02 15:26:55,707 [INFO] Portal(fuco) updated!
+2025-11-02 15:27:21,555 [INFO] Portal (fuco) removed!
+2025-11-02 15:27:50,460 [INFO] Successfully tested MAC(00:1A:79:19:28:62) for Portal(fu)
+2025-11-02 15:27:50,461 [ERROR] Error testing MAC(00:1A:79:BA:BB:1A
+) for Portal(fu)
+2025-11-02 15:27:52,348 [INFO] Successfully tested MAC(00:1A:79:19:28:5F) for Portal(fu)
+2025-11-02 15:27:52,350 [INFO] Portal(fu) added!
+2025-11-02 15:28:03,344 [INFO] getting Data from 01ab2cca91a54f7e9987674b642d1983
+2025-11-02 15:28:03,344 [INFO] Using mac: 00:1A:79:19:28:62
+2025-11-02 15:29:45,770 [INFO] Refreshing XMLTV...
+2025-11-02 15:29:45,770 [INFO] Refreshing Lineup...
+2025-11-02 15:29:45,772 [INFO] Playlist config saved!
+2025-11-02 15:29:45,774 [INFO] Loaded existing programme data from cache.
+2025-11-02 15:29:45,774 [INFO] Fetching EPG | Portal: fu | offset: 0 |
+2025-11-02 15:29:45,899 [INFO] getting Data from 01ab2cca91a54f7e9987674b642d1983
+2025-11-02 15:29:45,899 [INFO] Using mac: 00:1A:79:19:28:62
+2025-11-02 15:29:47,300 [INFO] Lineup Refreshed.
+2025-11-02 15:29:48,281 [INFO] XMLTV cache updated.
+2025-11-02 15:29:53,124 [INFO] Playlist Requested
+2025-11-02 15:29:53,124 [INFO] Regenerating playlist due to host change: None -> localhost:8001
+2025-11-02 15:29:53,124 [INFO] Generating playlist.m3u...
+2025-11-02 15:29:55,849 [INFO] Playlist generated and cached.
+2025-11-02 15:29:57,366 [INFO] Playlist Requested
+2025-11-02 15:30:10,082 [INFO] Playlist Requested
+2025-11-02 15:30:10,088 [INFO] IP(172.18.0.1) requested Portal(01ab2cca91a54f7e9987674b642d1983):Channel(657105)
+2025-11-02 15:30:10,088 [INFO] Trying Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:19:28:62):Channel(657105)
+2025-11-02 15:30:12,673 [INFO] Occupied Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:19:28:62)
+2025-11-02 15:30:52,217 [INFO] Playlist Requested
+2025-11-02 15:30:52,222 [INFO] IP(172.18.0.1) requested Portal(01ab2cca91a54f7e9987674b642d1983):Channel(657105)
+2025-11-02 15:30:52,223 [INFO] Unable to connect to Portal(01ab2cca91a54f7e9987674b642d1983) using MAC(00:1A:79:19:28:62)
+2025-11-02 15:30:52,223 [INFO] Moving MAC(00:1A:79:19:28:62) for Portal(fu)
+2025-11-02 15:30:52,224 [INFO] Trying Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:19:28:5F):Channel(657105)
+2025-11-02 15:30:55,139 [INFO] Occupied Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:19:28:5F)
+2025-11-02 15:31:52,007 [INFO] Unoccupied Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:19:28:5F)
+2025-11-02 15:31:53,181 [INFO] Unoccupied Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:19:28:62)
+2025-11-02 15:32:06,855 [INFO] getting Data from 01ab2cca91a54f7e9987674b642d1983
+2025-11-02 15:32:06,855 [INFO] Using mac: 00:1A:79:19:28:5F
+2025-11-02 15:32:37,269 [INFO] Successfully tested MAC(00:1A:79:10:E3:6C) for Portal(fu)
+2025-11-02 15:32:37,271 [INFO] Portal(fu) updated!
+2025-11-02 15:32:50,025 [INFO] Successfully tested MAC(00:1A:79:BA:BB:96) for Portal(fu)
+2025-11-02 15:32:50,027 [INFO] Portal(fu) updated!
+2025-11-02 15:35:51,717 [INFO] Playlist Requested
+2025-11-02 15:35:51,717 [INFO] Regenerating playlist due to host change: localhost:8001 -> 192.168.178.11:8001
+2025-11-02 15:35:51,717 [INFO] Generating playlist.m3u...
+2025-11-02 15:35:53,803 [INFO] Playlist generated and cached.
+2025-11-02 15:35:56,814 [INFO] Playlist Requested
+2025-11-02 15:36:11,081 [INFO] Playlist Requested
+2025-11-02 15:36:11,083 [INFO] Guide Requested
+2025-11-02 15:36:11,084 [INFO] Refreshing XMLTV...
+2025-11-02 15:36:11,089 [INFO] Loaded existing programme data from cache.
+2025-11-02 15:36:11,090 [INFO] Fetching EPG | Portal: fu | offset: 0 |
+2025-11-02 15:36:14,933 [INFO] XMLTV cache updated.
+2025-11-02 15:36:31,235 [INFO] IP(172.18.0.1) requested Portal(01ab2cca91a54f7e9987674b642d1983):Channel(657105)
+2025-11-02 15:36:31,235 [INFO] Trying Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96):Channel(657105)
+2025-11-02 15:36:38,486 [INFO] IP(172.18.0.1) requested Portal(01ab2cca91a54f7e9987674b642d1983):Channel(657105)
+2025-11-02 15:36:38,487 [INFO] IP(172.18.0.1) requested Portal(01ab2cca91a54f7e9987674b642d1983):Channel(657105)
+2025-11-02 15:36:38,487 [INFO] Trying Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96):Channel(657105)
+2025-11-02 15:36:38,487 [INFO] Trying Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96):Channel(657105)
+2025-11-02 15:36:42,078 [INFO] Occupied Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96)
+2025-11-02 15:36:42,634 [INFO] Occupied Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96)
+2025-11-02 15:36:46,219 [INFO] Unoccupied Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96)
+2025-11-02 15:36:46,284 [INFO] Unoccupied Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96)
+2025-11-02 15:36:47,704 [INFO] IP(172.18.0.1) requested Portal(01ab2cca91a54f7e9987674b642d1983):Channel(657105)
+2025-11-02 15:36:47,704 [INFO] Trying Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96):Channel(657105)
+2025-11-02 15:36:51,248 [INFO] Occupied Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96)
+2025-11-02 15:38:14,867 [INFO] Unoccupied Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96)
+2025-11-02 15:39:25,131 [INFO] getting Data from 01ab2cca91a54f7e9987674b642d1983
+2025-11-02 15:39:25,131 [INFO] Using mac: 00:1A:79:BA:BB:96
+2025-11-02 15:45:06,472 [INFO] Playlist Requested
+2025-11-02 15:45:06,473 [INFO] Regenerating playlist due to host change: 192.168.178.11:8001 -> localhost:8001
+2025-11-02 15:45:06,473 [INFO] Generating playlist.m3u...
+2025-11-02 15:45:08,608 [INFO] Playlist generated and cached.
+2025-11-02 15:45:08,617 [INFO] IP(172.18.0.1) requested Portal(01ab2cca91a54f7e9987674b642d1983):Channel(657105)
+2025-11-02 15:45:08,617 [INFO] Trying Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96):Channel(657105)
+2025-11-02 15:45:12,291 [INFO] Occupied Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96)
+2025-11-02 15:46:08,688 [INFO] getting Data from 01ab2cca91a54f7e9987674b642d1983
+2025-11-02 15:46:08,688 [INFO] Using mac: 00:1A:79:BA:BB:96
+2025-11-02 15:46:45,760 [INFO] Unoccupied Portal(01ab2cca91a54f7e9987674b642d1983):MAC(00:1A:79:BA:BB:96)
+2025-11-02 15:47:22,547 [INFO] getting Data from 01ab2cca91a54f7e9987674b642d1983
+2025-11-02 15:47:22,547 [INFO] Using mac: 00:1A:79:BA:BB:96

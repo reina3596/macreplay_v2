@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MacReplay</Name>
+  <Repository>macreplay:latest</Repository>
+  <Registry></Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/user/macreplay-local</Support>
+  <Project>Local MacReplay Installation</Project>
+  <Overview>MacReplay is an IPTV portal proxy that allows you to manage and stream IPTV channels with advanced features like channel editing, EPG support, and portal management.</Overview>
+  <Category>MediaApp:Video</Category>
+  <WebUI>http://[IP]:[PORT:8001]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/code-server-logo.png</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1699000000</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>MacReplay is an IPTV portal proxy that allows you to manage and stream IPTV channels with advanced features like channel editing, EPG support, and portal management.[br][br]
+  [b]Features:[/b][br]
+  • IPTV Portal Management[br]
+  • Channel Editor with DataTables[br]
+  • EPG (Electronic Program Guide) Support[br]
+  • MAC Address Management[br]
+  • Stream Fallback Support[br]
+  • Dashboard with Statistics[br]
+  • Settings Management[br][br]
+  [b]Default Port:[/b] 8001[br]
+  [b]Default User/Group:[/b] 99:100 (nobody:users)
+  </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8001</HostPort>
+        <ContainerPort>8001</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/macreplay/data</HostDir>
+      <ContainerDir>/app/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/macreplay/logs</HostDir>
+      <ContainerDir>/app/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Europe/Berlin</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>PYTHONUNBUFFERED</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="WebUI Port" Target="8001" Default="8001" Mode="tcp" Description="Web interface port" Type="Port" Display="always" Required="true" Mask="false">8001</Config>
+  <Config Name="Data Directory" Target="/app/data" Default="/mnt/user/appdata/macreplay/data" Mode="rw" Description="Application data directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/macreplay/data</Config>
+  <Config Name="Logs Directory" Target="/app/logs" Default="/mnt/user/appdata/macreplay/logs" Mode="rw" Description="Application logs directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/macreplay/logs</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID (99 = nobody)" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID (100 = users)" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
+  <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Timezone" Type="Variable" Display="always" Required="true" Mask="false">Europe/Berlin</Config>
+  <Config Name="Python Unbuffered" Target="PYTHONUNBUFFERED" Default="1" Mode="" Description="Python unbuffered output" Type="Variable" Display="advanced" Required="false" Mask="false">1</Config>
+</Container>

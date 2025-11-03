@@ -1,8 +1,8 @@
-# **MacReplay**
+# **MacReplay V2 - UNRAID**
 
-MacReplay is an improved version of [STB-Proxy](https://github.com/Chris230291/STB-Proxy), designed for seamless connectivity between MAC address portals and media platforms like Plex or M3U-based software.  
+MacReplay V2 is an improved version of [MacReplay](https://github.com/Evilvir-us/MacReplay), designed for seamless connectivity between MAC address portals and media platforms like Plex or M3U-based software.  
 
-This cross-platform solution works on Windows, Linux, and macOS, with both standalone executable and Python script options for maximum flexibility.
+
 
 ---
 
@@ -54,30 +54,11 @@ The playlist editor features a completely redesigned interface with powerful man
 
 ---
 
-## **Requirements**
-- **Python 3.7+** (for Python script) or download pre-built executable
-- **FFmpeg** installed on your system  
-- **Plex Pass** (if connecting to Plex) - *may no longer be required with recent Plex updates*
 
-### **Platform-Specific Setup**
-- **Windows**: Download `.exe` or install Python + FFmpeg
-- **Linux**: Install Python, pip, and FFmpeg via package manager
-- **macOS**: Install via Homebrew or download pre-built executable
-
----
 
 ## **Getting Started**
 
-### **Option 1: Pre-built Executable**
-1. **Download** the latest release for your platform from the [Releases page](https://github.com/Evilvir-us/MacReplay/releases)
-2. **Run** the executable
-3. **Open** your browser to the server URL shown in console
 
-### **Option 2: Python Script**
-1. **Clone** or download this repository
-2. **Install dependencies**: `pip install -r requirements.txt`
-3. **Run**: `python3 app.py`
-4. **Open** your browser to `http://localhost:13681`
 
 ### **Configuration Workflow**
 1. **Add Portals**: Go to Portals page and add your portal URLs and MAC addresses

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>MacReplay</Name>
-  <Repository>macreplay:latest</Repository>
+  <Name>macreplayv2</Name>
+  <Repository>macreplayv2:latest</Repository>
   <Registry></Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/T4s3rF4c3/macreplay_v2</Support>
   <Project>https://github.com/T4s3rF4c3/macreplay_v2</Project>
-  <Overview>MacReplay v2 is an improved IPTV portal proxy that allows you to manage and stream IPTV channels with advanced features like enhanced channel editing, EPG support, MAC address rotation, smart fallback systems, and portal management. Perfect for integrating with Plex or M3U-based media software.</Overview>
+  <Overview>MacReplayV2 is an improved IPTV portal proxy that allows you to manage and stream IPTV channels with advanced features like enhanced channel editing, EPG support, MAC address rotation, smart fallback systems, and portal management. Perfect for integrating with Plex or M3U-based media software.</Overview>
   <Category>MediaApp:Video</Category>
   <WebUI>http://[IP]:[PORT:8001]</WebUI>
   <TemplateURL/>
@@ -20,7 +20,7 @@
   <DateInstalled>1699000000</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>MacReplay v2 is an improved IPTV portal proxy that allows you to manage and stream IPTV channels with advanced features including enhanced channel editing, EPG support, MAC address rotation, and portal management.[br][br]
+  <Description>MacReplayV2 is an improved IPTV portal proxy that allows you to manage and stream IPTV channels with advanced features including enhanced channel editing, EPG support, MAC address rotation, and portal management.[br][br]
   [b]Key Features:[/b][br]
   • Advanced Channel Editor with DataTables interface[br]
   • Multiple IPTV Portal Management with MAC address rotation[br]
@@ -47,12 +47,12 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/macreplay/data</HostDir>
+  <HostDir>/mnt/user/appdata/macreplayv2/data</HostDir>
       <ContainerDir>/app/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/macreplay/logs</HostDir>
+  <HostDir>/mnt/user/appdata/macreplayv2/logs</HostDir>
       <ContainerDir>/app/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -81,8 +81,8 @@
   </Environment>
   <Labels/>
   <Config Name="WebUI Port" Target="8001" Default="8001" Mode="tcp" Description="Web interface port" Type="Port" Display="always" Required="true" Mask="false">8001</Config>
-  <Config Name="Data Directory" Target="/app/data" Default="/mnt/user/appdata/macreplay/data" Mode="rw" Description="Application data directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/macreplay/data</Config>
-  <Config Name="Logs Directory" Target="/app/logs" Default="/mnt/user/appdata/macreplay/logs" Mode="rw" Description="Application logs directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/macreplay/logs</Config>
+  <Config Name="Data Directory" Target="/app/data" Default="/mnt/user/appdata/macreplayv2/data" Mode="rw" Description="Application data directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/macreplayv2/data</Config>
+  <Config Name="Logs Directory" Target="/app/logs" Default="/mnt/user/appdata/macreplayv2/logs" Mode="rw" Description="Application logs directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/macreplayv2/logs</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID (99 = nobody)" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID (100 = users)" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
   <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Timezone" Type="Variable" Display="always" Required="true" Mask="false">Europe/Berlin</Config>

@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to MacReplay v2 will be documented in this file.
+All notable changes to MacReplayV2 will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -59,18 +59,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 1. **Backup your configuration:**
    ```bash
-   cp /mnt/user/appdata/macreplay/data/MacReplay.json /tmp/backup/
+   cp /mnt/user/appdata/macreplayv2/data/MacReplayV2.json /tmp/backup/
    ```
 
 2. **Stop the old container:**
    ```bash
-   docker stop macreplay
-   docker rm macreplay
+   docker stop macreplayv2
+   docker rm macreplayv2
    ```
 
 3. **Pull the new version:**
    ```bash
-   cd /mnt/user/appdata/macreplay
+   cd /mnt/user/appdata/macreplayv2
    git pull
    ```
 
@@ -86,4 +86,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Note on Configuration Compatibility
 
-MacReplay v2 is backward compatible with v1.x configuration files. Your existing portal and channel settings will be preserved during the upgrade.
+MacReplayV2 is backward compatible with v1.x configuration files. Your existing portal and channel settings will be preserved during the upgrade.

@@ -9,7 +9,7 @@ import xml.dom.minidom as minidom
 import threading
 from threading import Thread
 import logging
-logger = logging.getLogger("MacReplay")
+logger = logging.getLogger("MacReplayV2")
 logger.setLevel(logging.INFO)
 logFormat = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
 
@@ -19,7 +19,7 @@ log_dir = os.path.join(home_dir, "Evilvir.us")  # Subdirectory for logs
 # Create the directory if it doesn't already exist
 os.makedirs(log_dir, exist_ok=True)
 # Full path to the log file
-log_file_path = os.path.join(log_dir, "MacReplay.log")
+log_file_path = os.path.join(log_dir, "MacReplayV2.log")
 # Set up the FileHandler
 fileHandler = logging.FileHandler(log_file_path)
 fileHandler.setFormatter(logFormat)
@@ -76,6 +76,14 @@ else:
     host = "ubuntu.verbergwest.appboxes.co:13681"
 logger.info(f"Server started on http://{host}")
 
+try:
+    EPG_REFRESH_INTERVAL_HOURS = float(os.getenv("EPG_REFRESH_INTERVAL_HOURS", 4))
+except ValueError:
+    logger.warning("Invalid EPG_REFRESH_INTERVAL_HOURS value supplied; defaulting to 4 hours.")
+    EPG_REFRESH_INTERVAL_HOURS = 4.0
+
+EPG_REFRESH_INTERVAL_SECONDS = max(60, int(EPG_REFRESH_INTERVAL_HOURS * 3600))
+
 # Get the base path for the user directory
 basePath = os.path.expanduser("~")
 
@@ -83,10 +91,16 @@ basePath = os.path.expanduser("~")
 if os.getenv("CONFIG"):
     configFile = os.getenv("CONFIG")
 else:
-    configFile = os.path.join(basePath, "evilvir.us", "MacReplay.json")
+    configFile = os.path.join(basePath, "evilvir.us", "MacReplayV2.json")
 
 # Ensure the subdirectory exists
 os.makedirs(os.path.dirname(configFile), exist_ok=True)
+
+# Seamlessly migrate legacy config filenames
+legacyConfigFile = os.path.join(basePath, "evilvir.us", "MacReplay.json")
+if not os.path.exists(configFile) and os.path.exists(legacyConfigFile):
+    shutil.copy2(legacyConfigFile, configFile)
+    logger.info("Legacy MacReplay config detected – migrated to MacReplayV2.json")
 
 logger.info(f"Using config file: {configFile}")
 
@@ -139,7 +153,7 @@ defaultSettings = {
     "username": "admin",
     "password": "12345",
     "enable hdhr": "true",
-    "hdhr name": "MacReplay",
+    "hdhr name": "MacReplayV2",
     "hdhr id": str(uuid.uuid4().hex),
     "hdhr tuners": "10",
 }
@@ -784,7 +798,11 @@ def refresh_xmltv():
     user_dir = os.path.expanduser("~")
     cache_dir = os.path.join(user_dir, "Evilvir.us")
     os.makedirs(cache_dir, exist_ok=True)
-    cache_file = os.path.join(cache_dir, "MacReplayEPG.xml")
+    cache_file = os.path.join(cache_dir, "MacReplayV2EPG.xml")
+    legacy_cache_file = os.path.join(cache_dir, "MacReplayEPG.xml")
+    if not os.path.exists(cache_file) and os.path.exists(legacy_cache_file):
+        shutil.copy2(legacy_cache_file, cache_file)
+        logger.info("Legacy MacReplay EPG cache detected – migrated to MacReplayV2EPG.xml")
 
     # Define date cutoff for programme filtering
     day_before_yesterday = datetime.utcnow() - timedelta(days=2)
@@ -1259,7 +1277,7 @@ def log():
     basePath = os.path.expanduser("~")
 
     # Define the path for the log file in the 'evilvir.us' subdirectory
-    logFilePath = os.path.join(basePath, "evilvir.us", "MacReplay.log")
+    logFilePath = os.path.join(basePath, "evilvir.us", "MacReplayV2.log")
 
     # Ensure the subdirectory exists
     os.makedirs(os.path.dirname(logFilePath), exist_ok=True)
@@ -1308,7 +1326,7 @@ def discover():
         "BaseURL": host,
         "DeviceAuth": name,
         "DeviceID": id,
-        "FirmwareName": "MacReplay",
+    "FirmwareName": "MacReplayV2",
         "FirmwareVersion": "666",
         "FriendlyName": name,
         "LineupURL": host + "/lineup.json",
@@ -1410,7 +1428,25 @@ def refresh_lineup_endpoint():
 def start_refresh():
     # Run refresh_lineup in a separate thread
     threading.Thread(target=refresh_lineup, daemon=True).start()
-    threading.Thread(target=refresh_xmltv, daemon=True).start()
+    start_epg_scheduler()
+
+
+def start_epg_scheduler(interval_seconds: int = EPG_REFRESH_INTERVAL_SECONDS):
+    interval_hours = interval_seconds / 3600
+
+    def _epg_worker():
+        logger.info(
+            f"Background EPG refresh thread started; updating every {interval_hours:.2f} hour(s)."
+        )
+        while True:
+            try:
+                refresh_xmltv()
+                logger.info("Background EPG refresh completed.")
+            except Exception as exc:
+                logger.error(f"Background EPG refresh failed: {exc}")
+            time.sleep(interval_seconds)
+
+    threading.Thread(target=_epg_worker, daemon=True, name="EPGRefreshScheduler").start()
     
     
 if __name__ == "__main__":

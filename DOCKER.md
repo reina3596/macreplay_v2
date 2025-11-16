@@ -1,10 +1,10 @@
-# MacReplay v2 - Docker Image
+# MacReplayV2 - Docker Image
 
 [![Docker Build](https://github.com/T4s3rF4c3/macreplay_v2/actions/workflows/docker-build.yml/badge.svg)](https://github.com/T4s3rF4c3/macreplay_v2/actions/workflows/docker-build.yml)
 [![GitHub release](https://img.shields.io/github/release/T4s3rF4c3/macreplay_v2.svg)](https://github.com/T4s3rF4c3/macreplay_v2/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This Docker image provides MacReplay v2 - an enhanced IPTV portal proxy with advanced channel management capabilities, optimized for Unraid deployment.
+This Docker image provides MacReplayV2 - an enhanced IPTV portal proxy with advanced channel management capabilities, optimized for Unraid deployment.
 
 ## 🚀 Quick Start
 
@@ -12,7 +12,7 @@ This Docker image provides MacReplay v2 - an enhanced IPTV portal proxy with adv
 
 ```bash
 docker run -d \
-  --name macreplay_v2 \
+  --name macreplayv2 \
   -p 8001:8001 \
   -v /path/to/config:/app/config \
   -e PUID=99 \
@@ -26,9 +26,9 @@ docker run -d \
 version: '3.8'
 
 services:
-  macreplay_v2:
+  macreplayv2:
     image: ghcr.io/t4s3rf4c3/macreplay_v2:latest
-    container_name: macreplay_v2
+  container_name: macreplayv2
     ports:
       - "8001:8001"
     volumes:
@@ -78,7 +78,7 @@ services:
 ## 🔧 Unraid Installation
 
 1. **Add Community Applications** (if not already installed)
-2. **Search for "MacReplay"** in Community Applications
+2. **Search for "MacReplayV2"** in Community Applications
 3. **Install** and configure the template
 4. **Access** the web interface at `http://your-unraid-ip:8001`
 
@@ -122,7 +122,7 @@ Returns HTTP 200 when the application is healthy.
 **Container won't start:**
 ```bash
 # Check logs
-docker logs macreplay_v2
+docker logs macreplayv2
 
 # Verify permissions
 ls -la /path/to/config
@@ -140,7 +140,7 @@ sudo chown -R 99:100 /path/to/config
 curl -f http://localhost:8001/health
 
 # Check container network
-docker exec macreplay_v2 curl -f http://localhost:8001/health
+docker exec macreplayv2 curl -f http://localhost:8001/health
 ```
 
 ## 📚 Documentation

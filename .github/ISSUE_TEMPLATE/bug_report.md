@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Create a report to help us improve MacReplay v2
+about: Create a report to help us improve MacReplayV2
 title: '[BUG] '
 labels: ['bug', 'needs-triage']
 assignees: ''
@@ -27,7 +27,7 @@ A clear and concise description of what actually happened.
 
 ## 📱 Environment Information
 
-**MacReplay Version:**
+**MacReplayV2 Version:**
 - Version: [e.g., v2.1.0]
 - Installation Method: [Docker/Unraid/Manual]
 
@@ -58,7 +58,7 @@ A clear and concise description of what actually happened.
 **Container Logs:**
 ```
 # Paste relevant log entries here
-# You can get these with: docker logs macreplay_v2
+# You can get these with: docker logs macreplayv2
 ```
 
 **Browser Console Errors:**
@@ -87,7 +87,7 @@ Add any other context about the problem here.
 
 - [ ] I have searched existing issues to ensure this is not a duplicate
 - [ ] I have included all requested information above
-- [ ] I have tested this with the latest version of MacReplay v2
+- [ ] I have tested this with the latest version of MacReplayV2
 - [ ] I have checked the logs for relevant error messages
 - [ ] I have tried basic troubleshooting (restart container, clear browser cache)
 

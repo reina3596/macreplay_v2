@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Suggest an idea for MacReplay v2
+about: Suggest an idea for MacReplayV2
 title: '[FEATURE] '
 labels: ['enhancement', 'needs-triage']
 assignees: ''
@@ -62,7 +62,7 @@ A clear and concise description of any alternative solutions or features you've 
 ## 📊 Priority
 
 How important is this feature to you?
-- [ ] Critical - Cannot use MacReplay effectively without it
+- [ ] Critical - Cannot use MacReplayV2 effectively without it
 - [ ] High - Would significantly improve my experience
 - [ ] Medium - Nice to have, would use it regularly
 - [ ] Low - Minor improvement
@@ -93,7 +93,7 @@ Add any other context, links, or references about the feature request here.
 - [ ] I have clearly described the problem and proposed solution
 - [ ] I have considered the implementation complexity
 - [ ] I have provided use cases and examples
-- [ ] This feature aligns with MacReplay v2's goals
+- [ ] This feature aligns with MacReplayV2's goals
 
 ## 🏷️ Labels
 

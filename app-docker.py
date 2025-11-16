@@ -8,7 +8,7 @@ import xml.dom.minidom as minidom
 import threading
 from threading import Thread
 import logging
-logger = logging.getLogger("MacReplay")
+logger = logging.getLogger("MacReplayV2")
 logger.setLevel(logging.INFO)
 logFormat = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
 
@@ -19,14 +19,20 @@ if os.getenv("CONFIG"):
 else:
     # Default paths for container
     log_dir = "/app/data"
-    configFile = os.path.join(log_dir, "MacReplay.json")
+    configFile = os.path.join(log_dir, "MacReplayV2.json")
 
 # Create directories if they don't exist
 os.makedirs(log_dir, exist_ok=True)
 os.makedirs("/app/logs", exist_ok=True)
 
+# Seamlessly migrate legacy MacReplay config filenames to the new MacReplayV2 convention
+legacyConfigFile = os.path.join(log_dir, "MacReplay.json")
+if not os.path.exists(configFile) and os.path.exists(legacyConfigFile):
+    shutil.copy2(legacyConfigFile, configFile)
+    logger.info("Legacy MacReplay config detected – migrated to MacReplayV2.json")
+
 # Log file path for container
-log_file_path = os.path.join("/app/logs", "MacReplay.log")
+log_file_path = os.path.join("/app/logs", "MacReplayV2.log")
 
 # Set up logging
 fileHandler = logging.FileHandler(log_file_path)
@@ -87,6 +93,14 @@ else:
     host = "0.0.0.0:8001"
 logger.info(f"Server started on http://{host}")
 
+try:
+    EPG_REFRESH_INTERVAL_HOURS = float(os.getenv("EPG_REFRESH_INTERVAL_HOURS", 4))
+except ValueError:
+    logger.warning("Invalid EPG_REFRESH_INTERVAL_HOURS value supplied; defaulting to 4 hours.")
+    EPG_REFRESH_INTERVAL_HOURS = 4.0
+
+EPG_REFRESH_INTERVAL_SECONDS = max(60, int(EPG_REFRESH_INTERVAL_HOURS * 3600))
+
 logger.info(f"Using config file: {configFile}")
 
 occupied = {}
@@ -131,7 +145,7 @@ defaultSettings = {
     "username": "admin",
     "password": "12345",
     "enable hdhr": "true",
-    "hdhr name": "MacReplay",
+    "hdhr name": "MacReplayV2",
     "hdhr id": str(uuid.uuid4().hex),
     "hdhr tuners": "10",
 }
@@ -748,7 +762,11 @@ def refresh_xmltv():
     # Docker-optimized cache paths
     cache_dir = "/app/data"
     os.makedirs(cache_dir, exist_ok=True)
-    cache_file = os.path.join(cache_dir, "MacReplayEPG.xml")
+    cache_file = os.path.join(cache_dir, "MacReplayV2EPG.xml")
+    legacy_cache_file = os.path.join(cache_dir, "MacReplayEPG.xml")
+    if not os.path.exists(cache_file) and os.path.exists(legacy_cache_file):
+        shutil.copy2(legacy_cache_file, cache_file)
+        logger.info("Legacy MacReplay EPG cache detected – migrated to MacReplayV2EPG.xml")
 
     day_before_yesterday = datetime.utcnow() - timedelta(days=2)
     day_before_yesterday_str = day_before_yesterday.strftime("%Y%m%d%H%M%S") + " +0000"
@@ -1105,7 +1123,7 @@ def streaming():
 @app.route("/log")
 @authorise
 def log():
-    logFilePath = "/app/logs/MacReplay.log"
+    logFilePath = "/app/logs/MacReplayV2.log"
     
     try:
         with open(logFilePath) as f:
@@ -1147,7 +1165,7 @@ def discover():
         "BaseURL": host,
         "DeviceAuth": name,
         "DeviceID": id,
-        "FirmwareName": "MacReplay",
+    "FirmwareName": "MacReplayV2",
         "FirmwareVersion": "666",
         "FriendlyName": name,
         "LineupURL": host + "/lineup.json",
@@ -1241,7 +1259,25 @@ def refresh_lineup_endpoint():
 
 def start_refresh():
     threading.Thread(target=refresh_lineup, daemon=True).start()
-    threading.Thread(target=refresh_xmltv, daemon=True).start()
+    start_epg_scheduler()
+
+
+def start_epg_scheduler(interval_seconds: int = EPG_REFRESH_INTERVAL_SECONDS):
+    interval_hours = interval_seconds / 3600
+
+    def _epg_worker():
+        logger.info(
+            f"Background EPG refresh thread started; updating every {interval_hours:.2f} hour(s)."
+        )
+        while True:
+            try:
+                refresh_xmltv()
+                logger.info("Background EPG refresh completed.")
+            except Exception as exc:
+                logger.error(f"Background EPG refresh failed: {exc}")
+            time.sleep(interval_seconds)
+
+    threading.Thread(target=_epg_worker, daemon=True, name="EPGRefreshScheduler").start()
     
 if __name__ == "__main__":
     config = loadConfig()

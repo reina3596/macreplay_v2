@@ -1,4 +1,4 @@
-# MacReplay v2 - IPTV Portal Proxy
+# MacReplayV2 - IPTV Portal Proxy
 # https://github.com/T4s3rF4c3/macreplay_v2
 
 # =============================================================================
@@ -169,7 +169,7 @@ cython_debug/
 .\#*
 
 # =============================================================================
-# MacReplay v2 Specific
+# MacReplayV2 Specific
 # =============================================================================
 
 # Configuration files with sensitive data

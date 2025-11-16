@@ -1,6 +1,6 @@
 ---
 name: Question
-about: Ask a question about MacReplay v2
+about: Ask a question about MacReplayV2
 title: '[QUESTION] '
 labels: ['question', 'needs-triage']
 assignees: ''
@@ -36,7 +36,7 @@ Which documentation have you consulted?
 
 ## 💻 Environment Information
 
-**MacReplay Version:**
+**MacReplayV2 Version:**
 - Version: [e.g., v2.1.0]
 - Installation Method: [Docker/Unraid/Manual]
 

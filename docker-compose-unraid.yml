@@ -1,13 +1,13 @@
 services:
-  macreplay:
+  macreplayv2:
     build:
       context: .
       dockerfile: Dockerfile-unraid
       args:
         PUID: 99
         PGID: 100
-    container_name: macreplay
-    hostname: macreplay
+  container_name: macreplayv2
+  hostname: macreplayv2
     restart: unless-stopped
     
     # Network configuration for Unraid
@@ -27,13 +27,13 @@ services:
     # Volume mappings for Unraid
     volumes:
       # Configuration and data persistence
-      - /mnt/user/appdata/macreplay/data:/app/data
-      - /mnt/user/appdata/macreplay/logs:/app/logs
+  - /mnt/user/appdata/macreplayv2/data:/app/data
+  - /mnt/user/appdata/macreplayv2/logs:/app/logs
       
       # Optional: For development - mount templates and static files
       # Uncomment these lines if you want to modify templates/static files without rebuilding
-      # - /mnt/user/appdata/macreplay/templates:/app/templates
-      # - /mnt/user/appdata/macreplay/static:/app/static
+  # - /mnt/user/appdata/macreplayv2/templates:/app/templates
+  # - /mnt/user/appdata/macreplayv2/static:/app/static
     
     # Resource limits (adjust based on your Unraid server)
     deploy:

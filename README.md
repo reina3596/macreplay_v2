@@ -1,6 +1,6 @@
-# MacReplay v2 (Test Build)
+# MacReplayV2 (Test Build)
 
-MacReplay v2 is a lightweight IPTV portal proxy packaged for Docker on Unraid. This repository exists purely as a test sandbox, so expect limited polish and no formal support.
+MacReplayV2 is a lightweight IPTV portal proxy packaged for Docker on Unraid. This repository exists purely as a test sandbox, so expect limited polish and no formal support.
 
 ## Snapshot
 
@@ -13,8 +13,8 @@ MacReplay v2 is a lightweight IPTV portal proxy packaged for Docker on Unraid. T
 
 ```bash
 cd /mnt/user/appdata
-git clone https://github.com/T4s3rF4c3/macreplay_v2.git macreplay
-cd macreplay
+git clone https://github.com/T4s3rF4c3/macreplay_v2.git macreplayv2
+cd macreplayv2
 docker-compose -f docker-compose-unraid.yml up -d --build
 ```
 
@@ -25,8 +25,9 @@ Then open `http://YOUR-UNRAID-IP:8001` and add your first portal.
 | Setting | Value | Notes |
 |---------|-------|-------|
 | Ports | `8001/tcp` | Web dashboard + API |
-| Volumes | `/mnt/user/appdata/macreplay/data:/app/data`<br>`/mnt/user/appdata/macreplay/logs:/app/logs` | Persist config and logs |
+| Volumes | `/mnt/user/appdata/macreplayv2/data:/app/data`<br>`/mnt/user/appdata/macreplayv2/logs:/app/logs` | Persist config and logs |
 | Env Vars | `PUID=99`, `PGID=100`, `TZ=Europe/Berlin` (adjust as needed) | Match your Unraid user/group |
+| XMLTV refresh | 4-hour background loop (override via `EPG_REFRESH_INTERVAL_HOURS`) | Keeps Jellyfin guides up to date |
 
 ## Daily Use
 
@@ -38,18 +39,18 @@ Then open `http://YOUR-UNRAID-IP:8001` and add your first portal.
 
 ```bash
 # Tail logs
-docker logs macreplay -f
+docker logs macreplayv2 -f
 
 # Update test container
-cd /mnt/user/appdata/macreplay
+cd /mnt/user/appdata/macreplayv2
 docker-compose -f docker-compose-unraid.yml down
 git pull
 docker-compose -f docker-compose-unraid.yml up -d --build
 
 # Reset configuration
-docker stop macreplay
-rm /mnt/user/appdata/macreplay/data/MacReplay.json
-docker start macreplay
+docker stop macreplayv2
+rm /mnt/user/appdata/macreplayv2/data/MacReplayV2.json
+docker start macreplayv2
 ```
 
 ## Status

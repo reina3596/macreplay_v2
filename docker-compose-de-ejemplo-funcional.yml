@@ -1,3 +1,9 @@
+# El fichero se debe llamar docker-compose.yml para que funcione
+# Se levanta con docker compose up -d --build
+# up: Levanta los contenedores.
+# -d: (Detached) Lo ejecuta en segundo plano para que no te ocupe la terminal.
+# --build: (Opcional pero recomendado) Reconstruye la imagen si has hecho cambios en el código o en el Dockerfile.
+
 version: '3.8'
 
 services:

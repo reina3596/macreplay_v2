@@ -86,6 +86,16 @@
                         <textarea class="form-control" id="macs" name="macs" rows="3" placeholder="00:1A:79:XX:XX:XX,00:1A:79:YY:YY:YY" required></textarea>
                         <div class="form-text">Enter MAC addresses separated by commas</div>
                     </div>
+                    <div class="mb-3">
+                        <label class="form-label">Import TXT</label>
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn btn-outline-secondary" id="importTxtButton">
+                                <i class="fas fa-file-import"></i> Import TXT
+                            </button>
+                            <input type="file" class="form-control" id="importTxtInput" accept=".txt" multiple hidden>
+                        </div>
+                        <div class="form-text">Extracts URLs ending with /c/ and MACs from selected TXT files.</div>
+                    </div>
                     <div class="row">
                         <div class="col-md-6">
                             <label for="streams_per_mac" class="form-label">Streams per MAC</label>
@@ -258,5 +268,68 @@ function deletePortal(portalId, portalName) {
 }
 
 console.log('Portal functions loaded');
+
+const importTxtButton = document.getElementById('importTxtButton');
+const importTxtInput = document.getElementById('importTxtInput');
+
+if (importTxtButton && importTxtInput) {
+    importTxtButton.addEventListener('click', function () {
+        importTxtInput.click();
+    });
+
+    importTxtInput.addEventListener('change', function (event) {
+        const files = Array.from(event.target.files || []);
+        if (files.length === 0) {
+            return;
+        }
+
+        const urlRegex = /http:\/\/[^\s\r\n]+\/c\//gi;
+        const macRegex = /[0-9A-Fa-f]{2}(?::[0-9A-Fa-f]{2}){5}/g;
+        const urls = new Set();
+        const macs = new Set();
+
+        const readers = files.map(file => new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result || "");
+            reader.onerror = () => reject(new Error('Failed to read file: ' + file.name));
+            reader.readAsText(file);
+        }));
+
+        Promise.all(readers)
+            .then(contents => {
+                contents.forEach(text => {
+                    const urlMatches = text.match(urlRegex) || [];
+                    urlMatches.forEach(url => urls.add(url));
+
+                    const macMatches = text.match(macRegex) || [];
+                    macMatches.forEach(mac => macs.add(mac));
+                });
+
+                const urlInput = document.getElementById('url');
+                const macInput = document.getElementById('macs');
+
+                if (urlInput && urls.size > 0 && !urlInput.value) {
+                    urlInput.value = Array.from(urls)[0];
+                }
+
+                if (macInput && macs.size > 0) {
+                    const existing = macInput.value
+                        .split(',')
+                        .map(item => item.trim())
+                        .filter(item => item.length > 0);
+
+                    existing.forEach(mac => macs.add(mac));
+                    macInput.value = Array.from(macs).join(',');
+                }
+
+                importTxtInput.value = '';
+            })
+            .catch(error => {
+                console.error('TXT import error:', error);
+                alert('Failed to import TXT files.');
+                importTxtInput.value = '';
+            });
+    });
+}
 </script>
 {% endblock %} 

@@ -86,7 +86,7 @@ Showcase your MacReplayV2 setup by adding screenshots here:
 
 ## Status
 
-Experimental test project. Use at your own risk and do not rely on it for production IPTV workloads.
+Experimental test project. Use at your own risk and do not rely on it.
 
 ## License
 
